@@ -1,5 +1,0 @@
-1,Peti,Friman,546
-2,Leonid,Petrov,654
-3,,he,465
-4,,sdfs,54654
-5,Givi,Ho,564
