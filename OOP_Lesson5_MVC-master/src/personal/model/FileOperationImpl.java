@@ -59,4 +59,20 @@ public class FileOperationImpl implements FileOperation {
             System.out.println(ex.getMessage());
         }
     }
+
+    public void saveAllLines2(List<String> lines) {
+        try (FileWriter writer = new FileWriter(fileName, false)) {
+            for (String line : lines) {
+                // запись всей строки
+                writer.write(line);
+                // запись по символам
+                writer.append(';');
+                writer.append('\n');
+                writer.append('\n');
+            }
+            writer.flush();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
 }

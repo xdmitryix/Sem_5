@@ -46,7 +46,7 @@ public class RepositoryFile implements Repository {
         for (User item : users) {
             lines.add(mapper.map(item));
         }
-        fileOperation.saveAllLines(lines);
+        fileOperation.saveAllLines2(lines);
     }
 
     public void updateUser(User user) {
